@@ -1,38 +1,88 @@
+/* src/App.css */
+/* Apply styles to the entire application */
+
+body{
+  margin:0;
+  padding:0;
+}
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+  /* padding: 20px; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  background: linear-gradient(90deg,#dd9c24,pink);
+  height: 100vh;
+  padding-bottom: 1%;
+  padding-top: 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style the heading */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Style the search input */
+input[type="text"] {
+  width: 100px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #56ccf2; /* Light blue border */
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #f2f2f2; /* Light gray background */
+  text-align:center;
+}
+
+/* Style the user list container */
+.user-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  height:73%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top:1%;
+  overflow-y: scroll;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style individual user cards */
+.user-card {
+  background-color: #ff725c;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 5px rgba(0,0,0,.2);
+    height: 500px;
+    margin: 1rem;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s,-webkit-transform .3s;
+    width: 350px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-card:hover {
+  transform: scale(1.05);
 }
+
+/* Style user card headings */
+.user-card span {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+/* Style user card paragraphs */
+.user-card p {
+  font-size: 15px;
+  margin: 20px 10px 10px;
+}
+
+.user-image {
+  width: 100%;
+  height: 50%;
+  border-radius: 50%; 
+  margin-top:10px;
+}
+
+

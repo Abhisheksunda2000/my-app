@@ -1,0 +1,9 @@
+input[type="search"] {
+    background-color: #e0f8ff; /* Set the background color to blue */
+    border: 2px solid #0f6781;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+  }

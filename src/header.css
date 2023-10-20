@@ -1,0 +1,11 @@
+.heading{
+    text-align: center;
+    background: linear-gradient(90deg,#dd9cc8,#0f6781);
+    margin:0;
+    padding:3em;
+}
+
+.heading h1{
+    color: #af0000;
+    font-family: Per;
+}
